@@ -10,6 +10,6 @@ namespace MyApp.Model
         [Range(15,70)]
         public int Age { get; set; }
         [Required, MinLength(5)]
-        public string Country { get; set; }
+        public string Contury { get; set; }
     }
 }

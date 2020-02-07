@@ -1,8 +1,8 @@
-﻿@using MyApp.Models
-@model Student
+﻿@model StudentTeacherViewModel
 
-<link rel= "stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
+@{ 
+    ViewBag.Title = "Student"; // 다이나믹 타입 / 스트링, 인트 값 모두 가능 
+}
 <h3>Add New Student</h3>
 <form class="form form-horizontal" method="POST">
     <div class="form-group">
@@ -11,23 +11,53 @@
     <div class="form-group">
         <div class="col-md-3">
             <label>Name:</label>
-            <input type="text" class="form-control" asp-for="Name">
-            <span asp-validation-for="Name"></span>
+            <input type="text" class="form-control" asp-for="@Model.Student.Name">
+            <span asp-validation-for="@Model.Student.Name"></span>
         </div>
     </div>
     <div class="form-group">
         <div class="col-md-3">
             <label>Age:</label>
-            <input type="text" class="form-control" asp-for="Age">
-            <span asp-validation-for="Age"></span>
+            <input type="text" class="form-control" asp-for="@Model.Student.Age">
+            <span asp-validation-for="@Model.Student.Age"></span>
         </div>
     </div>
     <div class="form-group">
         <div class="col-md-3">
             <label>Contury:</label>
-            <input type="text" class="form-control" asp-for="Contury">
-            <span asp-validation-for=Contury"></span>
+            <input type="text" class="form-control" asp-for="@Model.Student.Contury">
+            <span asp-validation-for="@Model.Student.Contury"></span>
         </div>
     </div>
     <button type="submit" class="btn btn-default">Submit</button>
 </form>
+
+<hr />
+
+
+<h3>Our Teachers</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Name
+            </th>
+            <th>
+                Class
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var taecher in Model.Teachers)
+        {
+            <tr>
+                <td>
+                    @taecher.Name
+                </td>
+                <td>
+                    @taecher.Class
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

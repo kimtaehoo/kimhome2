@@ -21,3 +21,7 @@ C:\Users\popop\source\repos\MyApp\MyApp\obj\Debug\netcoreapp2.1\MyApp.Views.pdb
 C:\Users\popop\source\repos\MyApp\MyApp\obj\Debug\netcoreapp2.1\MyApp.dll
 C:\Users\popop\source\repos\MyApp\MyApp\obj\Debug\netcoreapp2.1\MyApp.pdb
 C:\Users\popop\source\repos\MyApp\MyApp\obj\Debug\netcoreapp2.1\MyApp.csproj.CopyComplete
+C:\Users\popop\source\repos\MyApp\MyApp\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\popop\source\repos\MyApp\MyApp\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\popop\source\repos\MyApp\MyApp\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\popop\source\repos\MyApp\MyApp\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.cshtml.g.cs
